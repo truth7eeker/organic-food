@@ -1,0 +1,13 @@
+@import '../../utils/vars.scss';
+
+.heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all var(--transition);
+}

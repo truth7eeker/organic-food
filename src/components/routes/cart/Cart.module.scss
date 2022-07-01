@@ -1,0 +1,39 @@
+@import '../../../utils/vars.scss';
+
+.wrapper {
+    padding: 0 6rem;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        .title {
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+        .notice {
+            display: flex;
+            align-items: center;
+            background-color: rgb(194, 224, 194);
+            padding: 10px;
+            border-radius: 5px;
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+
+// .trash {
+//     display: flex;
+//     gap: 2px;
+//     align-items: center;
+//     font-weight: 500;
+//     cursor: pointer;
+//     &:hover {
+//         color: grey;
+//     }
+// }

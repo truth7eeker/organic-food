@@ -1,0 +1,21 @@
+@import '../../utils/vars.scss';
+
+.categories ul {
+    display: flex;
+    gap: 20px;
+    li {
+        list-style: none;
+        background-color: var(--grey);
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: .3s;
+        &:hover, .active {
+            background-color: var(--green);
+        }
+    }
+    .active {
+        background-color: var(--green);   
+    }
+}

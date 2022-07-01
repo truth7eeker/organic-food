@@ -1,0 +1,54 @@
+@import '../../utils/vars.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 10px;
+    .left {
+        display: flex;
+        align-items: center;
+        .brand {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--green);
+        }
+        .motto {
+            font-size: 13px;
+            color: #33415c;
+            font-weight: 500;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    } 
+    .right {
+        display: flex;
+        gap: 5px;
+        .basket a {
+        text-decoration: none;
+        color:#33415c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; 
+        background-color: var(--grey);
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all var(--transition);
+        &:hover {
+            background-color: var(--green);
+        } 
+    }
+        img {
+            width: var(--icon-size);
+            height: var(--icon-size);
+        }  
+    }
+    .center {
+        flex: .8;
+    }
+}

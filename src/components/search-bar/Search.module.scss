@@ -1,0 +1,26 @@
+@import '../../utils/vars.scss';
+
+.search__bar {
+    position: relative;
+    input {
+    padding: 10px 15px 10px 25px;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--grey);
+    border: 1.5px solid var(--grey);
+    width: 100%;
+    &:focus {
+    border: 1.5px solid var(--green);
+    background-color: #fff;
+    }
+    }
+    .search__icon {
+        img {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+    }
+}
+}

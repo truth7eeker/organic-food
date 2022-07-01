@@ -1,0 +1,57 @@
+@import '../../utils/vars.scss';
+
+.li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: .5px solid #ccc;
+    padding:15px 0;
+    .info {
+        display: flex;
+        gap: 10px;
+        img {
+            width: 105px;
+            height: 85px;
+            border-radius: 5px;
+        }
+    }
+    .quantity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        img {
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+        }
+        .operators {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            cursor: pointer;
+            .operator {
+                border-radius: 50%;
+                padding: 10px;
+                transition: .2s;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+                border: 1px solid var(--green);
+                &:hover {
+                    background-color: var(--green);
+                    color: #fff
+                }
+            }
+            .operator__trash {
+                border: 1px solid dimgrey;
+                background-color:dimgrey;
+                &:hover {
+                    background-color: #E0DCDA;
+                }
+            }
+        }
+    }
+}

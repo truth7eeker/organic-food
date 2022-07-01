@@ -1,0 +1,42 @@
+@import '../../utils/vars.scss';
+
+.sort__menu {
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    .option {
+        display: flex;
+        gap: 3px;
+     
+        &:hover {
+            color: var(--green)
+        }
+        div {
+            transition: .5s ease;
+            margin-top: .5px;
+        }
+    }
+    .open {
+        transform: rotate(-0.5turn);
+    }
+    .dropdown {
+        position: absolute;
+        top: 45px;
+        flex-direction: column;
+        border-radius: 50px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 12%);
+        width:190px;
+        z-index: 1;
+        li {
+            list-style: none;
+            background-color: #fffefe;
+            padding: 10px 20px;
+            &:hover {
+                color: var(--green);
+            }
+        }
+    }
+}
