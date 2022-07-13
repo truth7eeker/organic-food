@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/organic-food/static/css/main.d372e66c.css",
-    "main.js": "/organic-food/static/js/main.0aa14023.js",
+    "main.js": "/organic-food/static/js/main.26c08b52.js",
     "static/js/483.690c5113.chunk.js": "/organic-food/static/js/483.690c5113.chunk.js",
     "static/media/logo.png": "/organic-food/static/media/logo.8b3aaec4f1fae3f218f6.png",
     "static/media/mir.png": "/organic-food/static/media/mir.009760a58cc543ebd1cb.png",
@@ -19,11 +19,11 @@
     "static/media/favorite.svg": "/organic-food/static/media/favorite.f43b77fd39761ccb2ac446abfbda2d49.svg",
     "static/media/close.svg": "/organic-food/static/media/close.4aba8967da523487d3fb309b8fedafda.svg",
     "main.d372e66c.css.map": "/organic-food/static/css/main.d372e66c.css.map",
-    "main.0aa14023.js.map": "/organic-food/static/js/main.0aa14023.js.map",
+    "main.26c08b52.js.map": "/organic-food/static/js/main.26c08b52.js.map",
     "483.690c5113.chunk.js.map": "/organic-food/static/js/483.690c5113.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d372e66c.css",
-    "static/js/main.0aa14023.js"
+    "static/js/main.26c08b52.js"
   ]
 }
