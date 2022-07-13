@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/organic-food/static/css/main.d372e66c.css",
+    "main.js": "/organic-food/static/js/main.0aa14023.js",
+    "static/js/483.690c5113.chunk.js": "/organic-food/static/js/483.690c5113.chunk.js",
+    "static/media/logo.png": "/organic-food/static/media/logo.8b3aaec4f1fae3f218f6.png",
+    "static/media/mir.png": "/organic-food/static/media/mir.009760a58cc543ebd1cb.png",
+    "static/media/empty-cart.png": "/organic-food/static/media/empty-cart.db905d1f4b063162f25b.png",
+    "static/media/shrug-emogi.png": "/organic-food/static/media/shrug-emogi.54e76890677f570ee1fc.png",
+    "static/media/chip.png": "/organic-food/static/media/chip.f88a902d8d270caaf1ac.png",
+    "static/media/mastercard.png": "/organic-food/static/media/mastercard.fdd172ae0eb926d5bbe9.png",
+    "static/media/basket-icon.svg": "/organic-food/static/media/basket-icon.725ce4a2e59d0dfce733f42baaf327e6.svg",
+    "static/media/left-arrow.svg": "/organic-food/static/media/left-arrow.3e4a426906cecb32034242cd6ee0a88d.svg",
+    "static/media/notice-icon.svg": "/organic-food/static/media/notice-icon.9a73f98a283a408a4442dd3d1c8d750e.svg",
+    "index.html": "/organic-food/index.html",
+    "static/media/search-icon.svg": "/organic-food/static/media/search-icon.d648b2a780629c4b03a29755933b41bc.svg",
+    "static/media/favorite-border.svg": "/organic-food/static/media/favorite-border.54448762805ee4de20d7f5cd86dad2cb.svg",
+    "static/media/expand-arrow.svg": "/organic-food/static/media/expand-arrow.b9186e679d8daed7a7d2d554923cc956.svg",
+    "static/media/favorite.svg": "/organic-food/static/media/favorite.f43b77fd39761ccb2ac446abfbda2d49.svg",
+    "static/media/close.svg": "/organic-food/static/media/close.4aba8967da523487d3fb309b8fedafda.svg",
+    "main.d372e66c.css.map": "/organic-food/static/css/main.d372e66c.css.map",
+    "main.0aa14023.js.map": "/organic-food/static/js/main.0aa14023.js.map",
+    "483.690c5113.chunk.js.map": "/organic-food/static/js/483.690c5113.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d372e66c.css",
+    "static/js/main.0aa14023.js"
+  ]
+}
