@@ -1,7 +1,10 @@
 @import '../../utils/vars.scss';
 
-.search__bar {
+.input__wrapper {
     position: relative;
+    label  {
+        margin-top: 10px;
+    }
     input {
     padding: 10px 15px 10px 25px;
     border-radius: 5px;
@@ -9,12 +12,13 @@
     background-color: var(--grey);
     border: 1.5px solid var(--grey);
     width: 100%;
-    &:focus {
+    transition: .3s;
+    &:focus, &:hover {
     border: 1.5px solid var(--green);
-    background-color: #fff;
+    background-color: #fff
     }
     }
-    .search__icon {
+    .input__icon {
         img {
         width: 18px;
         height: 18px;

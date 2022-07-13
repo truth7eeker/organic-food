@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './SortMenu.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSortOption } from '../../store/reducers/filterSlice/filterSlice'
+import useHover from '../../hooks/useHover';
 
 export interface IOption {
   title: string,
@@ -9,31 +10,24 @@ export interface IOption {
   order: string
 }
 
-function SortMenu() {
-  const options = [
-    { title: 'По популярности', sortBy: 'rating', order: 'desc' },
-    { title: 'По алфавиту', sortBy: 'title', order: 'ascend' },
-    { title: 'Дороже', sortBy: 'price', order: 'desc' },
-    { title: 'Дешевле', sortBy: 'price', order: 'ascend' },
-  ];
+const options = [
+  { title: 'По популярности', sortBy: 'rating', order: 'desc' },
+  { title: 'По алфавиту', sortBy: 'title', order: 'ascend' },
+  { title: 'Дороже', sortBy: 'price', order: 'desc' },
+  { title: 'Дешевле', sortBy: 'price', order: 'ascend' },
+];
 
+function SortMenu() {
   const currSortOption = useSelector((state: any) => state.filter.sort.title);
+
   const [isOpen, setIsOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const ref = useRef(null)
+  const [isHovered] = useHover(ref);
 
   const dispatch = useDispatch()
 
   const handleDropDown = () => {
     setIsOpen(!isOpen);
-
-  };
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
   };
 
   const handleSortOption = (option:IOption) => {
@@ -46,8 +40,7 @@ function SortMenu() {
       <div
         onClick={handleDropDown}
         className={styles.option}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
+        ref={ref}>
         {currSortOption}
         <div className={isOpen ? styles.open : ''}>
           <svg

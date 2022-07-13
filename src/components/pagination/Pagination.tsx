@@ -4,7 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setPage } from '../../store/reducers/filterSlice/filterSlice';
 
 function Pagination() {
-  const { total, page } = useSelector((state: any) => state.filter);
+  const { total, page, search } = useSelector((state: any) => state.filter);
+  const { products } = useSelector((store: any) => store.products);
   // 8 products per page
   const pagesNum = Math.ceil(total / 8);
   const pagesArr = [];
@@ -20,7 +21,7 @@ function Pagination() {
   };
 
   return (
-    <div>
+    <div style={{display: search && !products.length ? 'none' : 'block'}}>
       <ul className={styles.pagination}>
         {pagesArr.map((num) => (
           <li onClick={() => handlePage(num)} key={num} className={num === page ? styles.active : ''}>

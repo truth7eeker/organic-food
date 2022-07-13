@@ -9,23 +9,31 @@ export interface IProduct {
     pic2?: string,
     price: number,
     portion: string,
-    description: string
+    description: string,
+    isFavourite: boolean,
+    rating: number
 }
 
 interface IProducts {
     products: Array<IProduct>,
-    status: null | string
+    status: null | string,
+    favourites: Array<IProduct>
 }
 
 const initialState: IProducts = {
     products: [],
-    status: null
+    status: null,
+    favourites: []
 }
 
 const productsSlice = createSlice({
     name: 'products',
     initialState,
-    reducers: {},
+    reducers: {
+       setLike(state, {payload}) {
+        state.products.map(product => product.id === payload.id ? product.isFavourite = !product.isFavourite : product)
+       }
+    },
     extraReducers: (builder) => {
         builder.addCase(getProducts.pending, state => {
             state.status = 'loading'
@@ -39,5 +47,7 @@ const productsSlice = createSlice({
         })
     }
 })
+
+export const { setLike } = productsSlice.actions
 
 export default productsSlice.reducer

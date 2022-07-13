@@ -39,13 +39,16 @@ const cartSlice = createSlice({
                 found.quantity--
             } else if (found && found.quantity <= 1) {
                 state.items = state.items.filter(item => item !== found)
-                console.log(state.items)
             }
+            state.totalPrice = calcTotalPrice(state.items)
+        },
+        deleteProduct(state, { payload }) {
+            state.items = state.items.filter(item => item.id !== payload.id)
             state.totalPrice = calcTotalPrice(state.items)
         }
     }
 })
 
-export const { increment, decrement } = cartSlice.actions
+export const { increment, decrement, deleteProduct } = cartSlice.actions
 
 export default cartSlice.reducer

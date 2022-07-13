@@ -1,0 +1,67 @@
+@import '../../utils/vars.scss';
+
+.wrapper {
+    margin-top: 55px;
+    word-break: break-all;
+    padding-left:5px;
+
+    .top__wrapper {
+        border-bottom: #ccc 2px dotted;
+        padding-bottom:20px;
+        .order__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 10px;
+            word-break: break-all;
+            &:nth-child(2) p:nth-child(1) {
+                width:100px;
+            }
+            p:nth-child(2) {
+                color: black;
+                font-size:1.2rem;
+            }
+        }
+    }
+    .bottom__wrapper {
+        margin-top: 20px;
+        
+        button {
+            cursor: pointer;
+            background-color: var(--green);
+            outline: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            width: 100%;
+            a {
+                text-decoration: none;
+                color:rgb(63, 69, 60);
+                width: 100%;
+                height: 100%;
+            }
+            &:hover {
+                background-color: #61daa5;
+            }
+        }
+        .disabled {
+            background-color: #ccc;
+            border: 1px solid var(--green);
+            cursor: not-allowed;
+            &:hover {
+                background-color: #ccc;
+            }
+        }
+        p {
+            font-size: .8rem;
+            color: #ccc;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+  
+}

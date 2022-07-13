@@ -1,12 +1,15 @@
 @import '../../../utils/vars.scss';
 
 .wrapper {
-    padding: 0 6rem;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1em;
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 15px;
+        padding: 15px;
         .title {
             font-weight: 500;
             font-size: 1.2rem;
@@ -14,7 +17,7 @@
         .notice {
             display: flex;
             align-items: center;
-            background-color: rgb(194, 224, 194);
+            background-color: var(--light-green);
             padding: 10px;
             border-radius: 5px;
             img {
@@ -24,16 +27,40 @@
             }
         }
     }
+    .left {
+        border-right: .5px solid #ccc;
+    }
+    
 }
 
-
-// .trash {
-//     display: flex;
-//     gap: 2px;
-//     align-items: center;
-//     font-weight: 500;
-//     cursor: pointer;
-//     &:hover {
-//         color: grey;
-//     }
-// }
+.empty__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 100%;
+    img {
+        width: 300px;
+        height: 300px;
+        margin: 1.5rem 0;
+    }
+    button {
+        cursor: pointer;
+            background-color: var(--green);
+            outline: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            a {
+                text-decoration: none;
+                color:black;
+            }
+            &:hover {
+                background-color: #61daa5;
+            }
+    }
+   
+}
